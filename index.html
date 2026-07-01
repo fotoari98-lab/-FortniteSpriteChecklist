@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortnite Sprite Checklist</title>
+
+<style>
+body{
+margin:0;
+background:#090b18;
+font-family:Arial,sans-serif;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+text-align:center;
+background:#14162a;
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(120,0,255,.4);
+width:90%;
+max-width:500px;
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+background:linear-gradient(90deg,#64b5ff,#cc66ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+p{
+color:#ccc;
+}
+
+input{
+width:80%;
+padding:14px;
+border-radius:10px;
+border:none;
+font-size:18px;
+margin:20px 0;
+}
+
+button{
+background:#6c3cff;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:20px;
+border-radius:12px;
+cursor:pointer;
+}
+
+button:hover{
+background:#8c5cff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Fortnite Sprite Checklist</h1>
+
+<p>あなたの精霊コレクションを管理しよう！</p>
+
+<input id="name" placeholder="名前を入力">
+
+<br>
+
+<button onclick="start()">チェックリストを開く</button>
+
+</div>
+
+<script>
+
+function start(){
+
+let name=document.getElementById("name").value;
+
+localStorage.setItem("playerName",name);
+
+alert(name+" さん、ようこそ！");
+
+}
+
+</script>
+
+</body>
+
+</html>
